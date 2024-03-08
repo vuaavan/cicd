@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-               git branch: 'main',   'https://github.com/vuaavan/cicd.git'
+                git branch: 'main', url: 'https://github.com/vuaavan/cicd.git'
+               // git branch: 'main',   'https://github.com/vuaavan/cicd.git'
             }
         }
 
